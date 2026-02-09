@@ -23,7 +23,8 @@ export default function Header() {
 
   <button onClick={() => scrollToSection('#contact')}>
   Contact
-</button>
+  </button>
+
 
   return (
     <>
