@@ -21,26 +21,19 @@ export default function Header() {
     { label: 'Contact', href: '#contact' },
   ];
 
-  <button onClick={() => scrollToSection('#contact')}>
-  Contact
-  </button>
-
-
   return (
     <>
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          isScrolled ? 'bg-slate-900/95 backdrop-blur-md shadow-lg shadow-slate-900/50' : 'bg-transparent'
+          isScrolled
+            ? 'bg-slate-900/95 backdrop-blur-md shadow-lg shadow-slate-900/50'
+            : 'bg-transparent'
         }`}
       >
         <nav className="max-w-7xl mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             <a
               href="#home"
-              onClick={(e) => {
-                e.preventDefault();
-                scrollToSection('#home');
-              }}
               className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent hover:scale-105 transition-transform duration-300"
             >
               AY
@@ -51,10 +44,6 @@ export default function Header() {
                 <a
                   key={index}
                   href={link.href}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    scrollToSection(link.href);
-                  }}
                   className="text-slate-300 hover:text-cyan-400 transition-colors duration-300 font-medium"
                 >
                   {link.label}
@@ -81,10 +70,7 @@ export default function Header() {
               <a
                 key={index}
                 href={link.href}
-                onClick={(e) => {
-                  e.preventDefault();
-                  scrollToSection(link.href);
-                }}
+                onClick={() => setIsMobileMenuOpen(false)}
                 className="text-3xl text-slate-300 hover:text-cyan-400 transition-colors duration-300 font-medium"
               >
                 {link.label}
