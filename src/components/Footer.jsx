@@ -54,7 +54,7 @@ import { Heart, Github, Instagram, Mail } from 'lucide-react';
                   <Github size={20} />
                 </a>
                 <a
-                  href="https://alazar.19"
+                  href="https://www.instagram.com/alazar.19?igsh=Z3Y3Z3A4YjUxNGsx"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-2 rounded-lg bg-slate-800 hover:bg-cyan-500 transition-all duration-300"

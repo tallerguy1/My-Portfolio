@@ -47,7 +47,7 @@ export default function Hero() {
             <Github size={24} />
           </a>
           <a
-            href="#" 
+            href="https://www.instagram.com/alazar.19?igsh=Z3Y3Z3A4YjUxNGsx" 
             rel="noopener noreferrer"
             className="p-3 rounded-full bg-slate-800 hover:bg-cyan-500 transition-all duration-300 hover:scale-110" 
             > 
