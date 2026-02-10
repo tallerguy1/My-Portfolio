@@ -2,7 +2,7 @@
 
 🌐 Personal Portfolio Website
 
-   --HTML, CSS, JavaScript
+   --React, Tailwind
 
    --Responsive design
 
